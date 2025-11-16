@@ -4,10 +4,13 @@
 int main(void)
 {
   // printf("Hello World!\n");
-
-  int a = 2, b = 3, c = 4;
-  a += b *= c -= 1;
-  printf("%d %d %d", a, b, c);
+  int i;
+  for (i = 0; i < 5; i++) {
+    if (i == 2) {
+      continue;
+    }
+    printf("%d", i);
+  }
   return 0;
 }
 
